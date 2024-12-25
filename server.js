@@ -32,7 +32,7 @@ app.get("/generate-auth-token", (req, res) => {
     return encryptData(tokenData, PUBLIC_KEY);
   };
 
-  const mitraId = "kuGsg9uUemkEgKn2CyIf";
+  const mitraId = "18b536cd-067f-4131-a10e-dbc470fe28a8";
   if (mitraId) {
     const encryptedAuthToken = createAuthHeader(mitraId);
     res.json({ authToken: encryptedAuthToken });
